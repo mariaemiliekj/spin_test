@@ -1,0 +1,140 @@
+.circle-container {
+    position: relative;
+    width: 200px; /* Adjusted to accommodate larger orbit radius */
+    height: 900px; /* Adjusted to accommodate larger orbit radius */
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle-item {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  p {
+    font-size: 20px;
+    font-family: figtree;
+    font-weight: 400;
+    margin: 0; /* Ensures text is centered with no extra space */
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .subtext {
+    font-size: 16px; /* Smaller font size */
+    font-family: figtree; /* Different font family */
+    font-style: italic;
+    margin-top: 10px; /* Space from the above text */
+    text-align: center; /* Ensure this text is also centered */
+  }
+  
+  img {
+    width: 80px;
+    margin-bottom: 10px; /* Space above the text */
+  }
+  
+  
+  /* Define unique animations for each item */
+  .circle-item-1 {
+    background-color: #222525;
+    color: white;
+    animation: orbit1 40s linear infinite;
+  }
+  
+  .circle-item-2 {
+    background-color: #18ceb2;
+    color: white;
+    animation: orbit2 40s linear infinite;
+  }
+  
+  .circle-item-3 {
+    background-color: #F8F8F8;
+    color: #222525;
+    animation: orbit3 40s linear infinite;
+  }
+
+  .circle-item-4 {
+    background-color: #222525;
+    color: white;
+    animation: orbit4 40s linear infinite;
+  }
+  
+  .circle-item-5 {
+    background-color: #18ceb2;
+    color: white;
+    animation: orbit5 40s linear infinite;
+  }
+  
+  .circle-item-6 {
+    background-color: #F8F8F8;
+    color: #222525;
+    animation: orbit6 40s linear infinite;
+  }
+  @keyframes orbit1 {
+    from {
+      transform: rotate(0deg) translateX(450px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(450px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes orbit2 {
+    from {
+      transform: rotate(60deg) translateX(450px) rotate(-60deg);
+    }
+    to {
+      transform: rotate(420deg) translateX(450px) rotate(-420deg);
+    }
+  }
+  
+  @keyframes orbit3 {
+    from {
+      transform: rotate(120deg) translateX(450px) rotate(-120deg);
+    }
+    to {
+      transform: rotate(480deg) translateX(450px) rotate(-480deg);
+    }
+  }
+  
+  /* Add animations for new items 4, 5, and 6 */
+  @keyframes orbit4 {
+    from {
+      transform: rotate(180deg) translateX(450px) rotate(-180deg);
+    }
+    to {
+      transform: rotate(540deg) translateX(450px) rotate(-540deg);
+    }
+  }
+  
+  @keyframes orbit5 {
+    from {
+      transform: rotate(240deg) translateX(450px) rotate(-240deg);
+    }
+    to {
+      transform: rotate(600deg) translateX(450px) rotate(-600deg);
+    }
+  }
+  
+  @keyframes orbit6 {
+    from {
+      transform: rotate(300deg) translateX(450px) rotate(-300deg);
+    }
+    to {
+      transform: rotate(660deg) translateX(450px) rotate(-660deg);
+    }
+  }
+  
+  
+  .circle-item img, .circle-item p {
+    transform: rotate(0deg);
+  }
+  
